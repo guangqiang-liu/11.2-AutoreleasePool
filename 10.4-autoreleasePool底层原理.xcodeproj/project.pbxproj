@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9C3AC18323F7FA99004C7B9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3AC18223F7FA99004C7B9D /* main.m */; };
+		9C3AC18B23F7FAB3004C7B9D /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3AC18A23F7FAB3004C7B9D /* Person.m */; };
+		9C3AC22B23F8E6C4004C7B9D /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3AC22A23F8E6C4004C7B9D /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,11 @@
 /* Begin PBXFileReference section */
 		9C3AC17F23F7FA99004C7B9D /* 10.4-autoreleasePool底层原理 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "10.4-autoreleasePool底层原理"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3AC18223F7FA99004C7B9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C3AC18923F7FAB2004C7B9D /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		9C3AC18A23F7FAB3004C7B9D /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		9C3AC18C23F80216004C7B9D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../../../../Volumes/GQMAC/小码哥iOS底层讲解/底层下/day26/代码/Interview17-autorelease/Interview16-autorelease/main.cpp"; sourceTree = "<group>"; };
+		9C3AC22923F8E6C4004C7B9D /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		9C3AC22A23F8E6C4004C7B9D /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				9C3AC18223F7FA99004C7B9D /* main.m */,
+				9C3AC18C23F80216004C7B9D /* main.cpp */,
+				9C3AC18923F7FAB2004C7B9D /* Person.h */,
+				9C3AC18A23F7FAB3004C7B9D /* Person.m */,
+				9C3AC22923F8E6C4004C7B9D /* Dog.h */,
+				9C3AC22A23F8E6C4004C7B9D /* Dog.m */,
 			);
 			path = "10.4-autoreleasePool底层原理";
 			sourceTree = "<group>";
@@ -119,6 +131,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3AC22B23F8E6C4004C7B9D /* Dog.m in Sources */,
+				9C3AC18B23F7FAB3004C7B9D /* Person.m in Sources */,
 				9C3AC18323F7FA99004C7B9D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +252,7 @@
 		9C3AC18723F7FA99004C7B9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -246,6 +261,7 @@
 		9C3AC18823F7FA99004C7B9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
